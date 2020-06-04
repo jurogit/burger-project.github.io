@@ -1,3 +1,52 @@
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root {
+  --primary-color: #6c7f55;
+  --secondary-color: #e4612f;
+  --text-color: #2e282a;
+  --heading-color: #e4612f;
+  --link-color: #2e282a;
+  --link-hover-color: #e4612f;
+}
+
+body {
+  /* fallback system - tobb betutipus megadasa */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover-color);
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.thumbnail {
+  width: 90px;
+  height: auto;
 }
