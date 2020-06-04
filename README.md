@@ -1,1 +1,2 @@
-# burger-project.github.io
+# jurogit.github.io
+Burger Project
