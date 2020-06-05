@@ -7,6 +7,8 @@
   --heading-color: #e4612f;
   --link-color: #2e282a;
   --link-hover-color: #e4612f;
+  --form-background: #e1e2e1;
+
 }
 
 body {
@@ -49,4 +51,38 @@ strong {
 .thumbnail {
   width: 90px;
   height: auto;
+}
+
+.login-form {
+  padding: 15px;
+  display: inline-block;
+  background-color: var(--form-background);
+}
+
+.login-box {
+  padding: 15px;
+  border: solid 1px #ccc;
+}
+
+.login-box label {
+  font-size: 0.85rem;
+}
+
+.login-box input {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.login-box .submit-btn {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+}
+
+.login-box .submit-btn:focus,
+.login-box .submit-btn:hover {
+  background-color: #ccc;
 }
