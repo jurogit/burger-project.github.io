@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Main Navigation -->
+    <ul>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="/about-us.html" title="About us">About us</a></li>
+        <li><a href="/sortiment/products.html" title="Products">Products</a></li>
+        <li>Order</li>
+        <li><a href="/login.html" title="User area">User area</a></li>
+    </ul>
+
+    <!-- Order Form -->
+    <form>
+        <fieldset>
+            <legend>Szemelyes adatok</legend>
+            <div>
+                <label for="name">Név: *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email cím: *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="address">Cím: *</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="comment">Megjegyzés:</label>
+                <textarea id="comment" name="comment" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Kivansagra</legend>
+            <span>Extra feltét:</span>
+            <div>
+                <input type="radio" id="nothing" name="extra" value="0" checked>
+                <label for="nothing">Nem kérek</label>
+            </div>
+            <div>
+                <input type="radio" id="cheese" name="extra" value="300">
+                <label for="cheese">Sajt</label>
+            </div>
+            <div>
+                <input type="radio" id="double-cheese" name="extra" value="600">
+                <label for="double-cheese">Dupla sajt</label>
+            </div>
+            <div>
+                <input type="radio" id="double-meet" name="extra" value="1000">
+                <label for="double-meet">Dupla hús</label>
+            </div>
+            <div>
+                <input type="radio" id="double-double" name="extra" value="1600">
+                <label for="double-double">Dupla dupla</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="extra" value="1800">
+                <label for="other">Valami más</label>
+            </div>
+
+            <!-- --------------------------------------------------------------
+                tobbet is kivalaszthatunk 
+                !!! logikai hiba !!!
+                pl.: Nem kérek, Sajt, ...
+                ezert alkalmazzunk radio gombokat
+                (csak egyet lehet kivalasztani)
+            -------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------
+            <div>
+                <input type="checkbox" id="nothing" name="nothing" value="0" checked>
+                <label for="nothing">Nem kérek</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cheese" name="cheese" value="300">
+                <label for="cheese">Sajt</label>
+            </div>
+            <div>
+                <input type="checkbox" id="double-cheese" name="double-cheese" value="600">
+                <label for="double-cheese">Dupla sajt</label>
+            </div>
+            <div>
+                <input type="checkbox" id="double-meet" name="double-meet" value="1000">
+                <label for="double-meet">Dupla hús</label>
+            </div>
+            <div>
+                <input type="checkbox" id="double-double" name="double-double" value="1600">
+                <label for="double-double">Dupla dupla</label>
+            </div>
+            <div>
+                <input type="checkbox" id="other" name="other" value="1800">
+                <label for="other">Valami más</label>
+            </div>
+            -------------------------------------------------------------- -->
+
+            <div>
+                <label for="sauce">Szósz:</label>
+                <select id="souce" name="souce">
+                <option value="0" selected>mustár</option>
+                <option value="100">ketchup</option>
+            </select>
+            </div>
+            <div>
+                <label for="quantity">Mennyiség:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" value="1">
+            </div>
+        </fieldset>
+
+        <button type="submit">Rendelés leadása</button>
+        <span id="total-price" class="total-price">Ár: 1200 Ft</span>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="lib/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="lib/popper-1.16.0-umd/popper.min.js"></script>
+    <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
