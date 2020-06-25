@@ -2,7 +2,7 @@
   "name": "burger-project.github.io",
   "version": "1.0.0",
   "description": "Burger Project",
-  "main": "index.js",
+  "main": "js/custom.js",
   "directories": {
     "lib": "lib"
   },

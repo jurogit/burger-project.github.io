@@ -17,6 +17,7 @@ body {
   font-weight: 300;
   font-style: normal;
   color: var(--text-color);
+  padding-top: 75px
 }
 
 h1,
@@ -46,6 +47,10 @@ em {
 
 strong {
     font-weight: 500;
+}
+
+.btn {
+  margin-bottom: 5px;
 }
 
 .thumbnail {

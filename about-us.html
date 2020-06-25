@@ -21,51 +21,73 @@
 </head>
 
 <body>
-    <!-- Main Navigation -->
-    <ul>
-        <li><a href="/" title="Home">Home</a></li>
-        <li>About us</li>
-        <li><a href="/sortiment/products.html" title="Products">Products</a></li>
-        <li><a href="/order.html" title="Order">Order</a></li>
-        <li><a href="/login.html" title="User area">User area</a></li>
-    </ul>
 
-    <h1>About us</h1>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Burgermánia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="/" class="nav-link" title="Home">Home</a></li>
+                    <li class="nav-item"><a href="/about-us.html" class="nav-link" title="About us">About us</a></li>
+                    <li class="nav-item"><a href="/sortiment/products.html" class="nav-link" title="Products">Products</a></li>
+                    <li class="nav-item"><a href="/order.html" class="nav-link" title="Order">Order</a></li>
+                    <li class="nav-item"><a href="/users.html" class="nav-link" title="Users">Users</a></li>
+                    <li class="nav-item"><a href="/login.html" class="nav-link" title="User area">User area</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>About us</h1>
     
-    <!-- Opening hours -->
-    <table>
-        <caption>Opening hours</caption>
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>Open</th>
-                <th>Close</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday - Friday</td>
-                <td>09:00</td>
-                <td rowspan="2">21:00</td>
-            </tr>
-            <tr>
-                <td>Saturday</td>
-                <td>10:00</td>
-            </tr>
-            <tr>
-                <td>Monday</td>
-                <td>09:00</td>
-                <td>12:00</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">
-                    &copy; 2020
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+                    <!-- Opening hours -->
+                    <table>
+                        <caption>Opening hours</caption>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Open</th>
+                                <th>Close</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>09:00</td>
+                                <td rowspan="2">21:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>09:00</td>
+                                <td>12:00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">
+                                    &copy; 2020
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

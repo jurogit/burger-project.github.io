@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Burgermania</title>
+    <title>Users</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -22,6 +22,14 @@
 </head>
 
 <body>
+
+    <!-- Paragraph Emmet abbreviations p*1>lorem -->
+    <!-- <em> hangsulyos tartalom </em> -->
+    <!-- <strong> formazott szoveg, kiemeles </strong> -->
+    <!-- 
+        "block-level" elements
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+     -->
 
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -48,54 +56,39 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Heading -->
-                    <h1>Burgermania - csak erős idegzetűeknek</h1>
-
-                    <!-- Listak -->
-                    <ul>
-                        <li>
-                            Meat Lover
-                            <ul>
-                                <li>Beef</li>
-                                <li>Pork</li>
-                                <li>Turkey</li>
-                            </ul>
-                        </li>
-                        <li>Vegetarian</li>
-                        <li>Piedone</li>
-                    </ul>
-
-                    <!-- Kepek, linkek -->
-                    <a href="https://www.tasteofhome.com/recipes/barbecued-burgers/" title="Barbecued Burgers" target="_blank">
-                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps28800_UG143377D12_18_1b_RMS-1-696x696.jpg" class="thumbnail" alt="Barbecued Burgers">
-                    </a>
-
-                    <h2>What type of order will this be?</h2>
-                    <ol>
-                        <li>Delivery</li>
-                        <li>At a restaurant</li>
-                    </ol>
-
-                    <!-- Paragraph Emmet abbreviations p*1>lorem -->
-                    <!-- <em> hangsulyos tartalom </em> -->
-                    <!-- <strong> formazott szoveg, kiemeles </strong> -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <em>Et, debitis</em>. Culpa excepturi quibusdam corrupti veniam aliquam commodi consectetur velit. Quidem voluptatibus sapiente fugit quas sit ullam facilis itaque assumenda autem.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Et, debitis</strong>. Culpa excepturi quibusdam corrupti veniam aliquam commodi consectetur velit. Quidem voluptatibus sapiente fugit quas sit ullam facilis itaque assumenda autem.</p>
-
-                    <!-- 
-                        "block-level" elements
-                        https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
-                    -->
+                    <h1>Users</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button id="getUserDataBtn" class="btn btn-primary btn-block">Get Users</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- User Table -->
+                    <table id="userTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </main>
-    
-    <footer class="footer"></footer>
 
+    <footer class="footer"></footer>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/lib/jquery-3.5.1/jquery-3.5.1.min.js"></script>
-    <script src="/lib/popper-1.16.0-umd/popper.min.js"></script>
+    <script src="/lib/popper-2.4.2-umd/popper.min.js"></script>
     <script src="/lib/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 
     <!-- Custom JS -->
